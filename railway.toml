@@ -1,8 +1,5 @@
 [build]
-builder = "nixpacks"
-
-[build.args]
-NODE_VERSION = "20"
+builder = "dockerfile"
 
 [deploy]
-startCommand = "npx serve dist/portafolio/browser -s --single"
+startCommand = "npm run serve:prod"

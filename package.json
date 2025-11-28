@@ -6,13 +6,14 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "npx serve dist/portafolio/browser -s",
+    "start": "npx serve dist/portafolio/browser -s -l 3000",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:portafolio": "node dist/portafolio/server/server.mjs",
     "dev": "ng serve",
-    "postinstall": "npm install -g @angular/cli"
+    "postinstall": "npm install -g @angular/cli",
+    "serve:prod": "npx serve dist/portafolio/browser -s -l 3000"
   },
   "prettier": {
     "printWidth": 100,
