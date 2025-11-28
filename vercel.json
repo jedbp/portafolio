@@ -2,14 +2,16 @@
   "version": 2,
   "builds": [
     {
-      "src": "dist/portafolio/**/*",
+      "src": "**",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/dist/portafolio/index.html"
+      "dest": "/index.html"
     }
-  ]
+  ],
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/portafolio/browser"
 }
